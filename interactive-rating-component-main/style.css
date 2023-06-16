@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue-btn: hsl(212, 12%, 21%);
+    --Dark-Blue: hsl(214, 21%, 15%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 270px;
+}
+
+.card-header{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--White);
+}
+
+.container>p{
+    color: var(--Light-Grey);
+}
+
+
+[type=radio] {
+    height: 1px;
+    width: 1px;
+    appearance: none; 
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+[type=radio] + label {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    color: var(--Light-Grey);
+    font-weight: bold;
+    background-color: var(--Dark-Blue-btn);
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+[type=radio]:checked + label{
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+[type=radio]:hover + label{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.flex-container-btn:last-child{
+    margin-right: 0;
+}
+
+.btn-primary{
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    width: 270px;
+    border-radius: 1rem;
+    padding: .5rem 0;
+    color: var(--White);
+    background-color: var(--Orange);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btn-secondary:hover{
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+
+.btn-primary:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: background-color 0.25s;
+}
+
+.btn-star{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--Orange);
+    background-color: var(--Dark-Blue-btn);
+    position: relative;
+}
+
+.btn-star img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-container-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thank-you-state{
+    display: none;
+}
+
+.attribution{
+    display: none;
+}
