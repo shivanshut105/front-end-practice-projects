@@ -28,27 +28,27 @@
       </p>
 
       <div class="flex-container-btn">
-        <input type="radio" value="1" id="one" name="score" />
-        <label for="one">1</label>
-        <input type="radio" value="2" id="two" name="score" />
-        <label for="two">2</label>
-        <input type="radio" value="3" id="three" name="score" />
-        <label for="three">3</label>
-        <input type="radio" value="4" id="four" name="score" />
-        <label for="four">4</label>
-        <input type="radio" value="5" id="five" name="score" />
-        <label for="five">5</label>
+        <button class="btn-secondary">1</button>
+        <button class="btn-secondary">2</button>
+        <button class="btn-secondary">3</button>
+        <button class="btn-secondary">4</button>
+        <button class="btn-secondary">5</button>
       </div>
-      <button class="btn btn-primary">SUBMIT</button>
+      <button class="btn btn-primary" id="submit">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you-state">
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
+    <div class="thank-you-state hidden">
+      <img src="images/illustration-thank-you.svg">
+      <div class="rating">
+        You selected <span id="rating-scale">0</span> out of 5
+      </div>
+      <div class="card-header">Thank you!</div>
+      <p>
+        We appreciate you taking the time to give a rating. If
+        you ever need more support, don't hesitate to get in touch!
+      </p>
     </div>
     <!-- Thank you state end -->
 
@@ -56,7 +56,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/shivanshut105" target="_blank">Shivanshu</a>.
     </div>
     <script src="script.js"></script>
   </body>
