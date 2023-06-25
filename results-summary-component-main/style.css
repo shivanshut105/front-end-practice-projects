@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: var(--Pale-blue);
+    background-color: var(--White);
     margin: 0;
     padding: 0;
     font-family: 'Hanken Grotesk', sans-serif;
@@ -34,8 +34,9 @@ body{
 
 .summary-section{
     background-color: var(--White);
-    border-radius: 2rem;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
+    width: 395px;
+    border-radius: 0 2rem 2rem 0;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.09);
 }
 
@@ -111,14 +112,13 @@ body{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    width: 18rem;
+    width: 300px;
     color: var(--White);
     background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue), hsl(241, 71%, 47%));
     padding: 1.5rem 2rem;
     border-radius: 2rem;
-    position: relative;
-    left: 3rem;
-    /* box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15); */
+    transform: translateX(1.5rem);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
 }
 
 .result-section > h3{
@@ -126,15 +126,16 @@ body{
     margin-top: 0;
 }
 
-.result-section > h2{
-    margin-top: 3rem;
+.score-level{
+    margin-top: 1.75rem;
     margin-bottom: 1rem;
+    font-size: 1.4rem;
 }
 
 .result-section > p{
     padding: 0 1rem;
     color: var(--Light-lavender);
-    margin: 0 0 1rem;
+    margin: 0 0 1.25rem;
 }
 
 .score{
@@ -156,13 +157,45 @@ body{
     font-weight: 800;
 }
 
-
-
 .attribution {
   display: none;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 750px) {
+    body{
+        flex-direction: column;
+        height: revert;
+    }
+
+    .result-section{
+        padding: 0 auto;
+        margin: 0;
+        transform: revert;
+        width: auto;
+        border-radius: 0 0 2rem 2rem;
+        box-shadow: none;
+        /* width: 100%; */
+    }
+    
+    .summary-section{
+        padding-left: 0;
+        margin: 0;
+        width: auto;
+        border-radius: 0;
+        padding-top: 1.5rem;
+        transform: translateY(-1rem);
+        z-index: -1;
+        box-shadow: none;
+    }
+
+    .subject{
+        margin: auto;
+        margin-top: 1rem;
+    }
 }
