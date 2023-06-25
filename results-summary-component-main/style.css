@@ -158,13 +158,20 @@ body{
 }
 
 .attribution {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  bottom: 1.5rem;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: var(--Light-royal-blue);
+}
+
+.attribution a:hover{
+    color: var(--Light-slate-blue);
 }
 
 @media (max-width: 750px) {
@@ -197,5 +204,9 @@ body{
     .subject{
         margin: auto;
         margin-top: 1rem;
+    }
+
+    .attribution{
+        display: none;
     }
 }
