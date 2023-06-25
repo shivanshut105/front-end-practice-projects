@@ -39,6 +39,8 @@ window.onload = async function(){
     // });
     let i = 1;
     fetchData.forEach((data) => {
+
+        if(i>4) i = 1;
         
         let container = createElement('div', 'subject subject-'+i);
         
