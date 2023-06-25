@@ -74,11 +74,11 @@ body{
     background-color: hsla(241, 81%, 54%, 0.100);
 }
 
-.subject-score{
+.subject-total{
     color: grey;
 }
 
-.subject-score > span{
+.subject-marks-acquired{
     color: var(--Dark-gray-blue);
 }
 
